@@ -1,3 +1,7 @@
+function isNaturalNumber(num)
+{
+    return num > 0 && Number.isInteger(num);
+}
 function isLeapYear(year)
 {
     if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0)
@@ -23,7 +27,12 @@ function findNextLeapYear(year)
 const a = require("prompt-sync");
 const prompt = a();
 
-const year = prompt("Enter the year: ");
+let year = prompt("Enter the year: ");
+while (!isNaturalNumber(Number(year)))
+{
+    year = prompt("Input Invalid");
+}
+year = Number(year);
 
 if (isLeapYear(year))
 {

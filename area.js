@@ -1,3 +1,7 @@
+const a = require("prompt-sync");;
+const prompt = a();
+
+const shape = prompt("Enter the shape: ");
 function calcArea(shape, ...params)
 {
     switch (shape)
@@ -19,10 +23,7 @@ function calcArea(shape, ...params)
     }
 }
 
-const a = require("prompt-sync");;
-const prompt = a();
 
-const shape = prompt("Enter the shape: ");
 const params = prompt("Enter the parameters: ");
 const area = calcArea(shape, ...params);
 console.log (`The area of the ${shape} is ${area}`);

@@ -4,7 +4,11 @@ var name = prompt("Enter the name of student: ");
 var score = prompt("Enter the marks: ");
 
 var grade;
-if (score >= 97)
+if (score >= 100)
+{
+    throw new Error("Invalid score");
+}
+else if (score >= 97)
 {
     grade = 'A+';
 }
@@ -17,7 +21,7 @@ else if (score >= 90)
     grade = 'A-';
 }
 else if (score >= 87)
-{
+{        
     grade = 'B+';
 }
 else if (score >= 83)
@@ -35,7 +39,7 @@ else if (score >= 77)
 else if (score >= 73)
 {
     grade = 'C';
-}
+}   
 else if (score >= 70)
 {
     grade = 'C-';

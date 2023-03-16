@@ -71,7 +71,7 @@ app.listen(8080, () => {
     console.log('Server started on port 8080.')
 });
 
-fetch('http://localhost:8080/students', {
+/*fetch('http://localhost:8080/students', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
@@ -84,4 +84,29 @@ fetch('http://localhost:8080/students', {
 })
 .then(response => response.text())
 .then(data => console.log(data))
-.catch(error => console.error(error))
+.catch(error => console.error(error))*/
+
+/*fetch('http://localhost:8080/students/Ayush Sharma', {
+  method: 'PUT',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    name: 'Gagan Sharma',
+    age: 22,
+    gender: 'Male'
+  })
+})
+.then(response => response.text())
+.then(data => console.log(data))
+.catch(error => console.error(error))*/
+
+/*fetch('http://localhost:8080/students')
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error(error))*/
+
+/*fetch('http://localhost:8080/students/Ayush Sharma')
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error(error))*/
